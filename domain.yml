@@ -1,0 +1,98 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - bot_challenge
+  - clg
+  - address
+  - hod
+  - founder
+  - hodnum
+  - principal
+  - princiemail
+  - ghostel
+  - bhostel
+  - hfacility
+  - hfees
+  - feedback
+  - flink
+
+responses:
+  utter_greet:
+  - text: "तुम्‍ही कसे आहात!"
+
+
+  utter_happy:
+  - text: "छान, चालू ठेवा!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "मी एक बॉट आहे, रासाद्वारे समर्थित आहे."
+
+  utter_clg:
+  - text: "PICT पुणे हे खाजगी विनाअनुदानित अभियांत्रिकी महाविद्यालय आहे."
+
+  utter_founder:
+  - text: "पुणे इन्स्टिट्यूट ऑफ कॉम्प्युटर टेक्नॉलॉजी (PICT) ची स्थापना 1983 मध्ये सोसायटी फॉर कॉम्प्युटर टेक्नॉलॉजी अँड रिसर्च (SCTR) च्या अंतर्गत उच्च तांत्रिक शिक्षण आणि संशोधनात योगदान देण्याच्या उद्देशाने करण्यात आली.श्री.गोपाल कृष्ण, श्री.एन.रामकृष्ण आणि श्री.आर.एस. कोठावळे हे PICT च्या संस्थापक सदस्यांपैकी एक आहेत."
+
+  utter_address:
+  - text: "सर्व्हे नंबर 27, त्रिमूर्ती चौक जवळ, भारती विद्यापीठ परिसर, धनकवडी, पुणे, महाराष्ट्र 411043"
+
+  utter_hod:
+  - text: "डॉ मुक्ता सुनील टाकळीकर"
+
+  utter_hodnum:
+  - text: "020-24371101"
+
+  utter_principal:
+  - text: "Dr. R. Sreemathy"
+
+  utter_princiemail:
+  - text: " principal@pict.edu"
+
+  utter_ghostel:
+  - text: " 106 खोल्या"
+
+  utter_bhostel:
+  - text: " 67 खोल्या"
+
+  utter_hfacility:
+  - text: " इतर सुविधा जसे की गरम पाणी, लिफ्ट, इंटरनेट सुविधा, वैद्यकीय अधिकारी, वसतिगृहातील मेस आणि कॅन्टीन, व्यायामशाळा, टू व्हीलर पार्किंग, जनरेटर बॅकअपसह इनडोअर आणि आउटडोअर क्रीडा सुविधा."
+
+  utter_hfees:
+  - text: "1) संलग्न WC : रु. 1,20,000
+   2) संलग्न कॉमन WC : रु.1,10,000
+    3) परत करण्यायोग्य ठेव: रु. 15,000"
+
+  utter_feedback:
+  - text: "पालकांच्या लॉगिनवर तुम्ही फॉर्म भरू शकता"
+
+  utter_flink:
+  - text: लिंक येथे आहे [पालक लॉगिन] (https://pict.ethdigitalcampus.com/PICT/)
+actions:
+
+- action_play_rps
+- utter_greet
+- utter_clg
+- utter_founder
+- utter_address
+- utter_hod
+- utter_hodnum
+- utter_principal
+- utter_princiemail
+- utter_ghostel
+- utter_bhostel
+- utter_hfacility
+- utter_hfees
+- utter_feedback
+- utter_flink
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
